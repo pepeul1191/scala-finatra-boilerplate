@@ -1,3 +1,9 @@
+# Finatra Scala Boilerplate
+
+Ejecutar 'src/main/scala/configs/AppServer.scala'
+
+    $ sbt
+    $ sbt run
 
 ---
 
