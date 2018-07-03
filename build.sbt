@@ -15,11 +15,12 @@ lazy val root = (project in file(".")).
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.3"
 libraryDependencies += "javax.activation" % "activation" % "1.1"
 libraryDependencies += "com.twitter" %% "finatra-http" % "18.6.0"
-// typesafe
+// typesafe .conf
 libraryDependencies += "com.typesafe" % "config" % "1.3.2"
-// orm
+// orm y base de datos
 libraryDependencies += "com.typesafe.slick" %% "slick" % "3.2.3"
 libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.4"
 libraryDependencies += "com.typesafe.slick" %% "slick-hikaricp" % "3.2.3"
 libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.7.2"
-
+// json
+libraryDependencies += "com.typesafe.play" % "play-json_2.11" % "2.4.2"

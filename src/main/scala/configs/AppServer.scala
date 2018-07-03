@@ -6,6 +6,7 @@ import com.twitter.finatra.http.filters.{CommonFilters, LoggingMDCFilter, TraceI
 import com.twitter.finatra.http.routing.HttpRouter
 import filters.BeforeAllFilter
 import controllers.HomeController
+import controllers.DepartamentoController
 
 object ServerMain extends AppServer
 
@@ -18,5 +19,6 @@ class AppServer extends HttpServer {
       .filter[CommonFilters]
       .filter[BeforeAllFilter]
       .add[HomeController]
+      .add[DepartamentoController]
   }
 }
